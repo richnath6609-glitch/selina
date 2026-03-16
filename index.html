@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heritage Cocoa Ltd. | Premium Cocoa Products</title>
+    <meta name="description"
+        content="Heritage Cocoa Ltd. produces and exports high-quality cocoa beans, combining tradition, sustainability, and modern processing for global markets.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">Heritage</span> Cocoa Ltd.
+            </a>
+
+            <div class="nav-controls">
+                <button class="dashboard-toggle-btn" aria-label="Open Dashboard">
+                    <i class="ph ph-grid-four"></i>
+                    <span>Dashboard</span>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle menu">
+                    <i class="ph ph-list"></i>
+                </button>
+            </div>
+
+            <!-- Removed nav-links to keep focus on Dashboard -->
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay">
+        <button class="close-menu-btn" aria-label="Close menu">
+            <i class="ph ph-x"></i>
+        </button>
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Our Products</a></li>
+            <li><a href="#sustainability">Sustainability</a></li>
+            <li><a href="#farmers">Our Farmers</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Site Navigation Dashboard Sidebar -->
+    <aside class="site-dashboard" id="siteDashboard">
+        <div class="dashboard-header">
+            <div class="dashboard-logo">
+                <span class="logo-accent">Heritage</span>
+            </div>
+            <button class="close-dashboard" aria-label="Close Dashboard">
+                <i class="ph ph-x"></i>
+            </button>
+        </div>
+        
+        <div class="dashboard-content">
+            <div class="dashboard-section">
+                <p class="dashboard-label">Navigation</p>
+                <ul class="dashboard-links">
+                    <li><a href="#home" class="dashboard-link active"><i class="ph ph-house"></i> Home</a></li>
+                    <li><a href="#about" class="dashboard-link"><i class="ph ph-info"></i> About Us</a></li>
+                    <li><a href="#products" class="dashboard-link"><i class="ph ph-shopping-bag"></i> Our Products</a></li>
+                    <li><a href="#sustainability" class="dashboard-link"><i class="ph ph-leaf"></i> Sustainability</a></li>
+                    <li><a href="#farmers" class="dashboard-link"><i class="ph ph-users-three"></i> Our Farm</a></li>
+                </ul>
+            </div>
+            
+            <div class="dashboard-section mt-5">
+                <p class="dashboard-label">Support</p>
+                <ul class="dashboard-links">
+                    <li><a href="#contact" class="dashboard-link"><i class="ph ph-envelope"></i> Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="dashboard-footer">
+            <p>© 2026 Heritage Cocoa Ltd.</p>
+        </div>
+    </aside>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero section-padding">
+        <div class="hero-bg-container">
+            <div class="hero-slide active" style="background-image: url('assets/hero-new-1.png');"></div>
+            <div class="hero-slide" style="background-image: url('assets/hero-new-2.jpg');"></div>
+            <div class="hero-slide" style="background-image: url('assets/hero-new-3.jpg');"></div>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text animate-fade-up">
+                <span class="badge">Welcome to Heritage Cocoa Ltd.</span>
+                <h1>Preserving the <span class="text-accent">Rich Heritage</span> of West African Cocoa.</h1>
+                <p>We combine tradition, sustainability, and modern processing techniques to deliver premium cocoa
+                    products to global markets.</p>
+
+                <div class="hero-cta">
+                    <a href="#products" class="btn btn-primary">Discover Our Products</a>
+                    <a href="#about" class="btn btn-secondary">Learn Our Story</a>
+                </div>
+            </div>
+
+            <div class="hero-stats animate-fade-up delay-2">
+                <div class="stat-card">
+                    <h3>Premium</h3>
+                    <p>Quality Beans</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Ethical</h3>
+                    <p>Sourcing</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Sustainable</h3>
+                    <p>Practices</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Global</h3>
+                    <p>Supply</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding bg-light">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal-left">
+                    <div class="about-image">
+                        <img src="assets/heritage-logo.jpg" alt="Heritage Cocoa Logo" class="brand-logo-img">
+                    </div>
+                    <div class="experience-badge">
+                        <i class="ph ph-plant"></i>
+                        <span>Rooted in Ghana</span>
+                    </div>
+                </div>
+
+                <div class="about-text disclose-content reveal-right">
+                    <span class="section-subtitle">Who We Are</span>
+                    <h2 class="section-title">Committed to Preserving Cocoa Heritage</h2>
+                    <p class="lead">Heritage Cocoa Ltd. is a Ghana-based cocoa company dedicated to maintaining the rich
+                        cocoa heritage of West Africa.</p>
+                    <p>We work closely with farmers to ensure high-quality production while improving livelihoods in
+                        cocoa-growing communities. We believe cocoa is more than a crop—it is a heritage that connects
+                        farmers, communities, and global chocolate lovers.</p>
+
+                    <div class="mission-vision-grid mt-4">
+                        <div class="mv-card">
+                            <div class="icon-wrapper"><i class="ph ph-target"></i></div>
+                            <h3>Our Mission</h3>
+                            <p>To provide high-quality cocoa while supporting farmers and promoting sustainable
+                                agriculture.</p>
+                        </div>
+                        <div class="mv-card">
+                            <div class="icon-wrapper"><i class="ph ph-eye"></i></div>
+                            <h3>Our Vision</h3>
+                            <p>To become a leading cocoa supplier known for quality, integrity, and sustainability.</p>
+                        </div>
+                    </div>
+
+                    <div class="operations-list mt-4">
+                        <h3>Our Core Operations Focus On:</h3>
+                        <ul>
+                            <li><i class="ph-fill ph-check-circle"></i> Cocoa sourcing and aggregation</li>
+                            <li><i class="ph-fill ph-check-circle"></i> Quality control and processing</li>
+                            <li><i class="ph-fill ph-check-circle"></i> Export and international trade</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="products section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-subtitle">Our Offerings</span>
+                <h2 class="section-title">Premium Cocoa Products</h2>
+                <p class="section-desc">Delivering excellence from our farms to your facilities.</p>
+            </div>
+
+            <div class="products-grid">
+                <div class="product-card reveal-up delay-1">
+                    <div class="product-img-container">
+                        <img src="assets/cocoa-beans.png" alt="Premium Cocoa Beans">
+                    </div>
+                    <div class="product-info">
+                        <h3>Premium Cocoa Beans</h3>
+                        <p>Carefully selected and processed to meet rigorous international quality standards ensuring
+                            the perfect flavor profile.</p>
+                        <a href="javascript:void(0)" class="btn-text product-view-btn" data-product="beans">Request Quote <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card reveal-up delay-2">
+                    <div class="product-img-container">
+                        <img src="assets/cocoa-powder.png" alt="Cocoa Powder">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cocoa Powder</h3>
+                        <p>Finely processed, rich cocoa powder ideal for use in beverages, high-end baking, and premium
+                            confectionery.</p>
+                        <a href="javascript:void(0)" class="btn-text product-view-btn" data-product="powder">Request Quote <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card reveal-up delay-3">
+                    <div class="product-img-container">
+                        <img src="assets/cocoa-butter.png" alt="Cocoa Butter">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cocoa Butter</h3>
+                        <p>Pure, high-quality cocoa butter essential for superior chocolate manufacturing and luxury
+                            cosmetics.</p>
+                        <a href="javascript:void(0)" class="btn-text product-view-btn" data-product="butter">Request Quote <i class="ph ph-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Quality Journey (Process Timeline) -->
+    <section id="process" class="timeline-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-subtitle">Our Process</span>
+                <h2 class="section-title">From Farm to Export</h2>
+                <p class="section-desc">We maintain perfection at every stage of the cocoa journey.</p>
+            </div>
+
+            <div class="process-timeline">
+                <!-- Step 1 -->
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <i class="ph ph-selection-all"></i>
+                        <h4>1. Sourcing & Selection</h4>
+                        <p>We work directly with farmers in Twifo Praso to select only the finest, most robust cocoa pods for processing.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <i class="ph ph-thermometer"></i>
+                        <h4>2. Scientific Fermentation</h4>
+                        <p>Our proprietary fermentation process ensures the specific flavor precursors are perfectly developed.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <i class="ph ph-sun"></i>
+                        <h4>3. Natural Sun Drying</h4>
+                        <p>Beans are dried under the Ghanaian sun on raised platforms, ensuring optimal moisture and air circulation.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-item reveal-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <i class="ph ph-certificate"></i>
+                        <h4>4. Quality Certification</h4>
+                        <p>Every batch undergoes rigorous lab testing to meet international standards for export-grade cocoa.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Heritage & Sourcing Map -->
+    <section id="sourcing" class="sourcing-section section-padding">
+        <div class="container">
+            <div class="section-header text-center reveal-up">
+                <span class="section-subtitle">Global Reach</span>
+                <h2 class="section-title">The Heartland of Ghana Cocoa</h2>
+                <p class="section-desc">Headquartered in Twifo Praso, we connect West Africa's heritage to the world.</p>
+            </div>
+
+            <div class="heartland-visual reveal-up">
+                <img src="assets/heartland-cocoa.png" alt="Ghana Heartland Cocoa">
+                <div class="map-overlay-info">
+                    <h4>Direct from Twifo Praso</h4>
+                    <p>Our beans are sourced directly from the Central Region of Ghana, renowned for its rich soil and ideal cocoa climate.</p>
+                    <div class="mt-3">
+                        <span class="badge">Primary Hub</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="certification-badges reveal-up delay-2">
+                <div class="cert-item">
+                    <i class="ph ph-seal-check"></i>
+                    <span>Premium Grade-A</span>
+                </div>
+                <div class="cert-item">
+                    <i class="ph ph-users-four"></i>
+                    <span>Fair-Trade Ready</span>
+                </div>
+                <div class="cert-item">
+                    <i class="ph ph-plant"></i>
+                    <span>Sustainable Source</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sustainability & Farmers Section (Combined for layout flow) -->
+    <section class="dual-section" id="sustainability">
+        <!-- Sustainability -->
+        <div class="sustainability section-padding bg-dark text-white">
+            <div class="container container-narrow text-center reveal-up">
+                <i class="ph ph-leaf section-icon"></i>
+                <span class="section-subtitle text-light">Our Commitment</span>
+                <h2 class="section-title">Sustainability is Central to Our Operations</h2>
+                <p class="lead">We believe in a future where cocoa production enriches the environment and empowers the
+                    communities that depend on it.</p>
+
+                <div class="sustainability-features mt-5">
+                    <div class="feature-item">
+                        <div class="icon-circle"><i class="ph ph-users-three"></i></div>
+                        <h4>Supporting Smallholders</h4>
+                        <p>Empowering local farmers through fair pricing and direct support.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-circle"><i class="ph ph-tree"></i></div>
+                        <h4>Eco-Friendly Farming</h4>
+                        <p>Promoting practices that protect the soil and biodiversity.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-circle"><i class="ph ph-handshake"></i></div>
+                        <h4>Fair Trade Practices</h4>
+                        <p>Ensuring ethical business practices across our entire supply chain.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="icon-circle"><i class="ph ph-recycle"></i></div>
+                        <h4>Responsible Production</h4>
+                        <p>Minimizing waste and maximizing efficiency in processing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Strategic Partners Section -->
+        <div id="partners" class="partners-strip section-padding bg-light">
+            <div class="container">
+                <div class="section-header text-center reveal-up">
+                    <span class="section-subtitle">Our Support Network</span>
+                    <h2 class="section-title">Strategic Partners</h2>
+                </div>
+                <div class="partners-logos reveal-up">
+                    <div class="partner-card">
+                        <img src="assets/cocobod-logo.png" alt="COCOBOD Logo" class="partner-brand-logo">
+                        <p>Ghana Cocoa Board (COCOBOD)</p>
+                    </div>
+                    <!-- Add more partner cards here if needed -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Farmers -->
+        <div id="farmers" class="farmers section-padding pattern-bg">
+            <div class="container">
+                <div class="farmers-content boxed-content reveal-up">
+                    <div class="farmers-text">
+                        <span class="section-subtitle">Deeply Rooted</span>
+                        <h2>Empowering Our Farmers</h2>
+                        <p>We don't just buy cocoa; we invest in the people who grow it. We partner closely with local
+                            farmers, cooperatives, and strategic partners like <strong>COCOBOD</strong> to maintain the highest standards of cocoa cultivation.</p>
+                        <p>Through comprehensive training and ongoing support, we help farmers improve their
+                            productivity, increase their yield quality, and ultimately improve their income and
+                            livelihoods.</p>
+                        <blockquote class="farmer-quote mt-4">
+                            "Cocoa isn't just a crop, it's our livelihood. Heritage Cocoa helps us grow better and live
+                            better."
+                        </blockquote>
+                    </div>
+                    <div class="farmers-image-container">
+                        <img src="assets/farmer.png" alt="Ghanaian Cocoa Farmer">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal-left">
+                    <span class="section-subtitle">Get in Touch</span>
+                    <h2 class="section-title">Partner With Us</h2>
+                    <p class="lead mb-4">For partnerships, exports, or any general inquiries, we would love to hear from
+                        you.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="ph ph-map-pin"></i></div>
+                            <div>
+                                <h4>Headquarters</h4>
+                                <p>TWIFO PRASO<br>Ghana</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="ph ph-envelope-simple"></i></div>
+                            <div>
+                                <h4>Email Us</h4>
+                                <p><a href="mailto:nublaselina50@gmail.com">nublaselina50@gmail.com</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-box"><i class="ph ph-phone"></i></div>
+                            <div>
+                                <h4>Call Us</h4>
+                                <p><a href="tel:+233551144061">+233 551144061</a></p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="icon-box" style="background: #25D366; color: white;"><i class="ph ph-whatsapp-logo"></i></div>
+                            <div>
+                                <h4>WhatsApp Us</h4>
+                                <p><a href="https://wa.me/233551144061?text=Hello%20Heritage%20Cocoa,%20I'm%20interested%20in%20learning%20more%20about%20your%20products.">Chat on WhatsApp</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-card reveal-right">
+                    <form id="contactForm" class="contact-form">
+                        <h3>Inquiry Form</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Work Email</label>
+                                <input type="email" id="email" placeholder="john@company.com" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="product-select">Product of Interest</label>
+                                <select id="product-select" required>
+                                    <option value="" disabled selected>Select a Product</option>
+                                    <option value="beans">Premium Cocoa Beans</option>
+                                    <option value="powder">Cocoa Powder</option>
+                                    <option value="butter">Cocoa Butter</option>
+                                    <option value="other">General Inquiry</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="quantity">Quantity (Tons)</label>
+                                <input type="number" id="quantity" placeholder="e.g. 20" min="1">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Detailed Requirements</label>
+                            <textarea id="message" rows="4" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Send Inquiry <i class="ph ph-paper-plane-right"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container border-top pt-5 pb-4">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo mb-3 d-block">
+                        <span class="logo-accent">Heritage</span> Cocoa
+                    </a>
+                    <p>Dedicated to producing and exporting high-quality cocoa beans sourced from trusted farmers in
+                        Ghana.</p>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#products">Our Products</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
+                        <li><a href="#farmers">Our Farmers</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Connect With Us</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="LinkedIn"><i class="ph ph-linkedin-logo"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="ph ph-twitter-logo"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="ph ph-facebook-logo"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="ph ph-instagram-logo"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom mt-5 text-center">
+                <p>&copy; <span id="year"></span> Heritage Cocoa Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-grid">
+                <div class="modal-image">
+                    <img id="modalImg" src="" alt="Product Detail">
+                </div>
+                <div class="modal-text">
+                    <h2 id="modalTitle">Product Title</h2>
+                    <p id="modalDesc">Detailed description goes here...</p>
+                    <div class="modal-specs">
+                        <h4>Specifications</h4>
+                        <ul id="modalSpecsList">
+                            <!-- Populated by JS -->
+                        </ul>
+                    </div>
+                    <a href="#contact" class="btn btn-primary mt-4 close-modal-action">Inquire Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="main.js"></script>
+</body>
+
+</html>
